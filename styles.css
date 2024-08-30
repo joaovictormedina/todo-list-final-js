@@ -1,4 +1,4 @@
-html{
+html {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 h1 {
@@ -32,55 +32,56 @@ main {
 .todo-list-section {
     margin: 0.8rem 0 1.6rem;
     min-height: 5rem;
- 
-    & > ul {
-        padding-inline-start: 0rem;
-        height: 23rem;
-        overflow: auto;
-    }
+}
 
-    & > ul > li {
-        list-style-type: none;
-        padding: .8rem 1.6rem;
-        font-size: 1.6rem;
-        background-color: #efefef;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        margin-bottom: .8rem;  
-    }
+ul {
+    padding-inline-start: 0;
+    height: 23rem;
+    overflow: auto;
+}
 
-    & > ul > li:last-child {
-        margin-bottom: 0;
-    }
+ul li {
+    list-style-type: none;
+    padding: .8rem 1.6rem;
+    font-size: 1.6rem;
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: .8rem;
+}
 
-    & > ul > li > :no-button {
-        width: 2.4rem;
-        height: 2.4rem;
-        background-color: #e64c3c;
-        color: #fff;
-        border: none;
-        border-radius: .4rem;
-        cursor: pointer;
+ul li:last-child {
+    margin-bottom: 0;
+}
 
-        &:hover {
-            background: #da5c3e;
-        }
-    }
+ul li button {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #e64c3c;
+    color: #fff;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+ul li button:hover {
+    background: #da5c3e;
 }
 
 .checkbox-label-container {
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
-    & > label {
-        cursor: pointer;        
-    }
+.checkbox-label-container label {
+    cursor: pointer;
+    margin-left: .5rem;
+}
 
-    & > input {
-        cursor: pointer;
-    }
+.checkbox-label-container input {
+    cursor: pointer;
 }
 
 #create-todo-section {
@@ -103,10 +104,10 @@ main {
     outline: 0;
     border: 1px solid #646464;
     padding-left: .8rem;
+}
 
-    &:focus {
-        border: 1px solid #5ed7f6;
-    }
+.input-description:focus {
+    border: 1px solid #5ed7f6;
 }
 
 .add-task-btn {
@@ -119,8 +120,41 @@ main {
     border-radius: .4rem;
     font-size: 2.4rem;
     cursor: pointer;
+}
 
-    &:hover {
-        opacity: .8;
-    }
+.add-task-btn:hover {
+    opacity: .8;
+}
+
+.add-task-btn:disabled {
+    background-color: #d9d9d9;
+    cursor: not-allowed;
+}
+
+.remove-done-tasks-btn {
+    box-sizing: border-box;
+    height: 3.6rem;
+    color: #fff;
+    background: #8f49e7;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+    padding: 0 1.6rem;
+}
+
+.remove-done-tasks-btn:hover {
+    opacity: .8;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-display {
+    font-size: 1.6rem;
+    color: #333;
 }
