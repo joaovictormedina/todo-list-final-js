@@ -27,6 +27,7 @@ main {
     background: #fff;
     border-radius: .8rem;
     padding: 3.2rem 2.4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .todo-list-section {
@@ -157,4 +158,68 @@ footer {
 .progress-display {
     font-size: 1.6rem;
     color: #333;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For devices with width 768px and below */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    main {
+        padding: 2rem 1.6rem;
+    }
+
+    .input-description {
+        height: 2.8rem;
+        font-size: 1.4rem;
+    }
+
+    .add-task-btn {
+        height: 3rem;
+        width: 3rem;
+        font-size: 2rem;
+    }
+
+    .remove-done-tasks-btn {
+        height: 3rem;
+    }
+
+    .progress-display {
+        font-size: 1.4rem;
+    }
+}
+
+/* For devices with width 480px and below */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    main {
+        padding: 1.6rem 1.2rem;
+        max-width: 100%;
+    }
+
+    .input-description {
+        height: 2.4rem;
+        font-size: 1.4rem;
+        margin-right: 0.2rem;
+    }
+
+    .add-task-btn {
+        height: 2.8rem;
+        width: 2.8rem;
+        font-size: 1.8rem;
+    }
+
+    .remove-done-tasks-btn {
+        height: 2.8rem;
+    }
+
+    .progress-display {
+        font-size: 1.2rem;
+    }
 }
